@@ -1,0 +1,153 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size: 20px;
+	overflow-x:hidden;
+	color: #000000;
+	font-family: 'Flamenco', cursive;
+}
+header{
+	background-image: url('../images/ravi-roshan-_AdUs32i0jc-unsplash.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.logo_transparent{
+	float: left;
+	height: 200px;
+	width: auto;
+	/*border: 1px solid red;*/
+	margin-top: 0px;
+
+}
+.main-nav{
+	float: right;
+	margin-top: 90px;
+}
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 30px;
+}
+.main-nav li a{
+	padding: 5px 0px;
+	color: #000000;
+	text-decoration: none; 
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+.main-nav li:hover{
+border-bottom: 2px solid #283747;
+
+}
+.main-content-header{
+	width: 1180px;
+	position: absolute;
+	/*border: 1px solid red;*/
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+h1{
+	color: #000000;
+	font-size: 220%;
+	font-family: Trebuchet MS;
+	word-spacing:3px;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+.btn{
+	font-family: Verdana;
+	display: inline-block;
+	padding: 10px 30px;
+	text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full{
+	background-color: transparent;
+	color: #000000;
+	margin-right: 15px;
+	border: 1px solid #000000;
+}
+.btn-full:hover{
+	background-color: #bf55ec;
+}
+.btn-half{
+	background-color: transparent;
+	color: #bf55ec;
+	border: 1px solid #bf55ec;
+
+}
+.btn-half:hover{
+	background-color: #000000;
+}
+.clrchange{
+	animation: clrchangeghf 1s infinite;
+}
+@keyframes clrchangeghf{
+	0%{color: red}
+	25%{color:#bf55ec}
+	50%{color: white}
+	100%{color: #bf55ec}
+	}
+
+.icon{display: none;}
+
+
+/* for responsive queries */
+
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+@media only screen and (max-width: 998px){
+	h1{font-size: 200%;}
+}
+
+@media only screen and (max-width: 768px){
+	h1{font-size: 180%;}
+
+	.main-nav{display: none;}
+
+	.icon{ display: inline-block;
+        color: #000000;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px; 
+	}
+    .main-nav {float: left;}
+
+	.main-nav li{
+        
+        display: block;
+        margin-top: 10px;
+	}
+}
+@media only screen and (max-width: 480px){
+	.btn-full{
+		margin-bottom:  20px;
+	}
+	h1{font-size: 160%;}
+}
